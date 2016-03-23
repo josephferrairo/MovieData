@@ -1,0 +1,9 @@
+<% @movies.each do |movie| %>
+<h1><%= movie.title %></h1>
+<h3><%= movie.year %></h3>
+<h2><%= movie.synopsis %></h2>
+<% movie.abridged_cast.each do |cast|%>
+<li><%= cast.name %></li>
+
+<% end %>
+<% end %>
