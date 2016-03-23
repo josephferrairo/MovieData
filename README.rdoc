@@ -2,5 +2,5 @@
 
 This is a work in progress
 
-This app allows you to view which movies are currently in theatres along with a plot synonpsis, release date, and the starring cast. Each of the starring cast members have a link to their wikipedia page.
+This app allows you to view which movies are currently in theatres along with a plot synopsis, release date, and the starring cast. Each of the starring cast members have a link to their wikipedia page.
 
