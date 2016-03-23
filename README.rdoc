@@ -4,5 +4,3 @@ This is a work in progress
 
 This app allows you to view which movies are currently in theatres along with a plot synonpsis, release date, and the starring cast. Each of the starring cast members have a link to their wikipedia page.
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
