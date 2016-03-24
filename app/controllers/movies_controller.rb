@@ -3,7 +3,7 @@ class MoviesController < ApplicationController
   require 'rottentomatoes'
   include RottenTomatoes
 
-  Rotten.api_key = "qtqep7qydngcc7grk4r4hyd9"
+  Rotten.api_key = ENV['rotten_api_key']
 
   def new
     @movie = Movie.new

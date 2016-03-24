@@ -1,18 +1,26 @@
-<% @movies.each do |movie| %>
-<h1><%= movie.title %></h1>
-<h3><%= movie.year %></h3>
-<h4><%= movie.synopsis %></h4>
-<h4><img src =<%= img_src=movie.posters.profile %>></h4>
-<h4><%= movie.mpaa_rating %></h4>
-
-<h4> Critics Score: <%= movie.ratings.critics_score %>%</h4>
-<h4> Critics Rating: <%= movie.ratings.critics_rating %></h4>
-<h4> Audience Rating: <%= movie.ratings.audience_rating %></h4>
-<h4> Audience Score: <%= movie.ratings.audience_score %></h4>
-<h4> <%= movie.abridged_directors %></h4>
-<% movie.abridged_cast.each do |cast|%>
-<li><b><%= link_to cast.name,  "https://en.wikipedia.org/wiki/#{cast.name}" %></li></B>
+<div class ="in-theatres text-center">
 
 
-<% end %>
-<% end %>
+  <% @movies.each do |movie| %>
+  <h1><%= movie.title %></h1>
+  <h3>Year: <%= movie.year %></h3>
+  <h4><%= movie.synopsis %></h4>
+  <div class="img">
+    <h4><img src =<%= img_src=movie.posters.profile %>></h4>
+  </div>
+  <h4><%= movie.mpaa_rating %></h4>
+  <h4><%= movie.release_dates.theater %></h4>
+
+  <h5> Critics Score: <%= movie.ratings.critics_score %>%</h5>
+  <h5> Critics Rating: <%= movie.ratings.critics_rating %></h5>
+  <h5> Audience Rating: <%= movie.ratings.audience_rating %></h5>
+  <h5> Audience Score: <%= movie.ratings.audience_score %></h5>
+  <h5> <%= movie.abridged_directors %></h5>
+  <% movie.abridged_cast.each do |cast|%>
+  <li><b><%= link_to cast.name,  "https://en.wikipedia.org/wiki/#{cast.name}" %></li></B>
+
+
+    <% end %>
+    <% end %>
+  </div>
+</div>
